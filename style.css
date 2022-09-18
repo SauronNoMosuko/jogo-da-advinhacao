@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+:root {
+  font-size: 62.5%;
+  --color-1: #34355B;
+  --color-2: rgba(52, 53, 91, 0.8);
+  --shadow-one: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.1);
+}
+
+body{
+  background: linear-gradient(287.56deg, #C2E9FB 0%, #A1C4FD 100%);
+  min-height: 100vh;
+  min-width: 100vw;
+  display: grid;
+  place-items: center;
+}
+
+.hide {
+  display: none;
+}
+
+main {
+  background-color: white;
+  border-radius: 0.6rem;
+  width: min(42.8rem, 70%);
+  height: 27.3rem;
+  margin-top: -12rem;
+  padding: 6.4rem;
+  box-shadow: var(--shadow-one);
+  transition: all 300ms;
+}
+
+main:hover {
+  transform: scale(1.2);
+}
+
+main div:nth-child(1) {
+  text-align: center;
+}
+
+main h1 {
+  font-size: 2.4rem;
+  font-family: 'Montserrat';
+  font-weight: 600;
+  color: var(--color-1);
+  text-align: center;
+}
+
+main div:nth-child(1) p {
+  margin-top: 1.6rem;
+  font-size: 1.6rem;
+  font-family: 'DM Sans';
+  font-weight: 400;
+  color: var(--color-2);
+}
+
+form{
+  display: flex;
+  justify-content: center;
+}
+
+form button{
+  padding: 1.6rem;
+  background: #7879F1;
+  color: white;
+  font-family: 'DM Sans';
+  font-weight: 700;
+  font-size: 1.6rem;
+  margin-top: 4.8rem;
+  border: none;
+  border-radius: 0 0.5rem 0.5rem 0;
+  transition: all 1s;
+  transition-timing-function: ease-out;
+}
+
+form button:hover {
+  background-color:  #9696eb;
+  cursor: pointer;
+  transition: background .3s;
+  transform: scale(1.1);
+}
+
+form input:nth-child(1) {
+  padding: 1.6rem;
+  width: 6rem;
+  background-color: #DCE2E9;
+  border: none;
+  margin-top: 4.8rem;
+  border-radius: 0.5rem 0 0 0.5rem ;
+}
+
+main div:nth-child(2){
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+main div:nth-child(2) button {
+  padding: 1.6rem;
+  background: #7879F1;
+  color: white;
+  font-family: 'DM Sans';
+  font-weight: 700;
+  font-size: 1.6rem;
+  border: none;
+  border-radius: 0.5rem;
+  width: 18rem;
+  margin: 0 auto;
+  margin-top: 3.3rem;
+  transition: all 1s;
+  transition-timing-function: ease-out;
+}
+
+main div:nth-child(2) button:hover {
+  background-color:  #9696eb;
+  cursor: pointer;
+  transition: background .3s;
+  transform: scale(1.1);
+}
